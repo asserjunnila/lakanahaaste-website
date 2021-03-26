@@ -25,7 +25,7 @@
       background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       color: white;
-      text-align: center;
+      text-align: justify;
     }
 
     body>* {
@@ -72,9 +72,14 @@
     .socialmediatags {
       width: 50%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      flex-flow: wrap;
+      justify-content: center;
+      /* align-items: center; */
+    }
+
+    p.socialmediatag {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   </style>
 </head>
@@ -83,18 +88,21 @@
   <header>
   </header>
   <div class="container">
+    <div class="img-container"><img src="shieeets.png" alt="shieeets" /></div>
+
     <h1>Lakanahaaste</h1>
     <h2>Ole merkityksellinen internetissä!</h2>
     <p>Ole merkityksellinen internetissä ja osallistu yhteiseen kantaaottavaan haasteeseen
       merkityksellisyyden puolesta pukeutumalla lakanaan, ottamalla kuvan itsestäsi ja lisäämällä sen someen häsärillä
-      <span><a href="https://www.instagram.com/explore/tags/lakanahaaste/">#lakanahaaste</a></span>.
+      <span><a href="https://www.instagram.com/explore/tags/lakanahaaste/">#lakanahaaste</a></span>. Kaikki lahjoitukset
+      menevät hyväntekeväisyyteen.
     </p>
-    <h3>#lakanahaaste</h3>
+    <h3 style="color: black;">#lakanahaaste</h3>
     <div class="socialmediatags">
-      <p><a href="https://www.facebook.com/hashtag/lakanahaaste">facebook</a></p>
-      <p><a href="https://www.instagram.com/explore/tags/lakanahaaste/">instagram</a></p>
-      <p><a href="https://twitter.com/hashtag/lakanahaaste">twitter</a></p>
-      <p><a href="http://kielto.hommia.net">tiktok</a></p>
+      <p class="socialmediatag"><a href=" https://www.facebook.com/hashtag/lakanahaaste">facebook</a></p>
+      <p class="socialmediatag"><a href="https://www.instagram.com/explore/tags/lakanahaaste/">instagram</a></p>
+      <p class="socialmediatag"><a href="https://twitter.com/hashtag/lakanahaaste">twitter</a></p>
+      <p class="socialmediatag"><a href="http://kielto.hommia.net">tiktok</a></p>
     </div>
   </div>
   <footer>
